@@ -1,0 +1,12 @@
+{
+  "type": "record",
+  "name": "DocumentGeneratedKey",
+  "namespace": "com.example.kafkademo",
+  "doc": "document generated key",
+  "fields": [
+    {
+      "name": "referenceId",
+      "type": "string"
+    }
+  ]
+}

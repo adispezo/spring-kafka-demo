@@ -1,0 +1,23 @@
+{
+  "type": "record",
+  "name": "DocumentInfoValue",
+  "namespace": "com.example.kafkademo",
+  "doc": "document info value",
+  "fields": [
+    {
+      "name": "orderId",
+      "type": "string"
+    },
+    {
+      "name": "product",
+      "type": {
+        "name": "Product",
+        "type": "enum",
+        "symbols": [
+          "HOUSE",
+          "CAR"
+        ]
+      }
+    }
+  ]
+}

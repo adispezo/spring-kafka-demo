@@ -1,0 +1,15 @@
+{
+  "request": {
+    "method": "POST",
+    "urlPathPattern": "/documents/200"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "documentKey": "123456789"
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

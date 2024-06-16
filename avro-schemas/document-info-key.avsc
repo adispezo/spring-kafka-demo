@@ -1,0 +1,12 @@
+{
+  "type": "record",
+  "name": "DocumentInfoKey",
+  "namespace": "com.example.kafkademo",
+  "doc": "document info key",
+  "fields": [
+    {
+      "name": "referenceId",
+      "type": "string"
+    }
+  ]
+}

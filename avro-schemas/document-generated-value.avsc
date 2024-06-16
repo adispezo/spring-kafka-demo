@@ -1,0 +1,24 @@
+{
+  "type": "record",
+  "name": "DocumentGeneratedValue",
+  "namespace": "com.example.kafkademo",
+  "doc": "document generated value",
+  "fields": [
+    {
+      "name": "successful",
+      "type": "boolean"
+    },
+    {
+      "name": "orderId",
+      "type": "string"
+    },
+    {
+      "name": "documentKey",
+      "type": ["null", "string"]
+    },
+    {
+      "name": "errorMessage",
+      "type": ["null", "string"]
+    }
+  ]
+}

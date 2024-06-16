@@ -1,0 +1,22 @@
+spring:
+  kafka:
+    bootstrap-servers: ${spring.embedded.kafka.brokers}
+    security:
+      protocol: PLAINTEXT
+    properties:
+      schema.registry.url: http://localhost:9999/
+      spring.deserializer.key.delegate.class: io.confluent.kafka.serializers.KafkaAvroDeserializer
+      spring.deserializer.value.delegate.class: io.confluent.kafka.serializers.KafkaAvroDeserializer
+      auto.register.schemas: false  # only for testing
+      specific.avro.reader: true    # only for testing
+    consumer:
+      group-id: darkside
+      properties:
+        spring.json.trusted.packages: "com.example.kafkademo.*"
+      key-deserializer: org.springframework.kafka.support.serializer.ErrorHandlingDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.ErrorHandlingDeserializer
+    producer:
+      key-serializer: io.confluent.kafka.serializers.KafkaAvroSerializer
+      value-serializer: io.confluent.kafka.serializers.KafkaAvroSerializer
+
+base-url: http://localhost:8383
