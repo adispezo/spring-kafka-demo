@@ -71,8 +71,8 @@ In the 3000 topic there will be two messages (attempt 4 and 5), because of the 5
 ## Blocking vs non-blocking
 
 For this one there is no message example, but the code can be found in NonBlockingConfiguration.<br>
-On this that has been added extra is the configureDeadLetterPublishingContainerFactory method. When the Configuration annotation
-is uncommented a custom header with the name 'customExceptionHeader' will be added on every retry.
+In this class an extra method configureDeadLetterPublishingContainerFactory has been added. When the Configuration annotation
+is uncommented a custom header with the name 'customExceptionHeader' will be added on every retry and will be logged in DocumentInfoConsumer.
 
 ## Poison pull
 
