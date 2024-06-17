@@ -82,9 +82,9 @@ open http://localhost:8080/ui/docker-kafka-server/topic/documentInfo/data. Produ
 |---------------------|-----------------------|-----------------------|-------------|
 | document-create-key | {"referenceId":"123"} | document-create-value | poison pill |
 
-Then you look at the logging error will be thrown and this will not stop. Stop the application.
+The application will not be able to handle this message and will throw exceptions, the will not stop. 
 
-In ExceptionConfiguration uncomment bean on line 41 and comment bean on line 25. Start the application.
+Stop the application. In ExceptionConfiguration uncomment bean on line 41 and comment bean on line 25. Start the application.
 
 open http://localhost:8080/ui/docker-kafka-server/topic/documentInfo/data. Produce to topic:
 
